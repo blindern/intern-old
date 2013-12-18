@@ -19,3 +19,6 @@
 [submodule "fuel/packages/email"]
 	path = fuel/packages/email
 	url = git://github.com/fuel/email.git
+[submodule "fuel/packages/messages"]
+	path = fuel/packages/messages
+	url = https://github.com/elmuerte/FuelPHP-Messages.git
