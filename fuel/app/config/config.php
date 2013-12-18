@@ -78,8 +78,10 @@ return array(
 	/**
 	 * Localization & internationalization settings
 	 */
+	'language'           => 'nb', // Default language
 	// 'language'           => 'en', // Default language
 	// 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
+	'locale'             => 'nb_NO', // PHP set_locale() setting, null to not set
 	// 'locale'             => 'en_US', // PHP set_locale() setting, null to not set
 
 	/**
@@ -121,6 +123,7 @@ return array(
 		/**
 		 * A salt to make sure the generated security tokens are not predictable
 		 */
+		'token_salt'            => require "token_salt.php",
 		// 'token_salt'            => 'put your salt value here to make the token more secure',
 
 		/**
@@ -257,7 +260,7 @@ return array(
 	/**************************************************************************/
 	/* Always Load                                                            */
 	/**************************************************************************/
-	// 'always_load'  => array(
+	'always_load'  => array(
 
 		/**
 		 * These packages are loaded on Fuel's startup.
@@ -270,9 +273,11 @@ return array(
 		 *     array('auth'	=> PKGPATH.'auth/')
 		 * );
 		 */
-		// 'packages'  => array(
+		'packages'  => array(
 		// 	//'orm',
-		// ),
+			'auth',
+			'messages',
+		),
 
 		/**
 		 * These modules are always loaded on Fuel's startup. You can specify them
@@ -308,6 +313,6 @@ return array(
 		 * If you don't want the lang in a group use null as groupname.
 		 */
 		// 'language'  => array(),
-	// ),
+	),
 
 );
