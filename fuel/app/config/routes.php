@@ -15,4 +15,5 @@ return array(
 	'printer/fakturere' => 'bs/printerfakturere',
 
 	'kalender' => 'kalender/index',
+	'kalender/ical' => 'kalender/ical',
 );

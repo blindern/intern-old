@@ -5,6 +5,4 @@
  * See the individual environment DB configs for specific config information.
  */
 
-return array(
-
-);
+return array();

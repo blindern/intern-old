@@ -17,4 +17,4 @@ build
 /fuel/app/config/token_salt.php
 /fuel/app/config/auth_salt.php
 nbproject/
-
+/database.sqlite
